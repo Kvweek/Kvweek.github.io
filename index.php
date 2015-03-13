@@ -4,7 +4,7 @@
 <title>The Broke One</title>
 </head>
 <body>
-	<form action="contact.php" method="post" enctype="multipart/form-data" name="contactform" id="contactform">
+	<form action="index.php" method="post" enctype="multipart/form-data" name="contactform" id="contactform">
 	<label>
 	<div align="center">First Name
 	<input type="text" name="textfield" />
@@ -43,7 +43,7 @@
 	//now we open the file using the a flag, this will create the file if 
 	//it does not exist, and puts the pointer(where it starts writing) at the 
 	//end of the file 
-	$filename = "c:\\myfile.txt"; 
+	$filename = "https://github.com/Kvweek/Kvweek.github.io/text.txt"; 
 	$handle = fopen($filename, 'a'); 
 
 	//now we prepare our string to be added: 
