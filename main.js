@@ -5,12 +5,11 @@ Parse.initialize("4pAG568039x8dBBuekW2JvZhZahlImuqWpXHjums", "NlLcCGaYN7QGVzQUSc
     
 var inschrijfDb = Parse.Object.extend("inschrijfDb");
 var data = new inschrijfDb();
-
 var bank = new Object();
 
 $(document).ready(function(){
 	bank = new Object();
-	bank.name = "name"
+	
 });
 
 $(document).ready(function(){
