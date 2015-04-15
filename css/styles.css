@@ -1,0 +1,52 @@
+body {
+    background: #eee;
+    font-family: Oswald;
+}
+
+#main {
+    text-align: left;
+    background: #5C85FF;
+    width: 800px;
+    margin: 50px 0 0 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#main h1 {
+    margin-top: 10px;
+    font-size: 35px;
+    color: #001F7A;
+}
+
+#main ul {
+    padding-left: 20px;
+}
+
+#submit {
+    float: right;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 31, 122, 0.6);
+    border-radius: 10px;
+    color: #EFEFEF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#submit:active {
+    background: rgba(0, 31, 122, 1);
+    color: #FFFFFF;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
