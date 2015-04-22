@@ -17,7 +17,7 @@ $(document).ready(function(){
 		if(answer1){
 			var answer2 = confirm("Weet u zeker dat alle gegevens kloppen ?");
 			if(antwoord) {
-				data.save(bank, {
+				data.save(temporaryBank, {
 			   		success: function(object) {
 			   			alert("Alle gegevens zijn opgeslagen, bedankt.");
 			   			window.location.reload(true);
@@ -31,7 +31,7 @@ $(document).ready(function(){
 		else {
 			var answer2 = confirm("Weet u zeker dat alle gegevens kloppen ?");
 			if(antwoord) {
-				data.save(bank, {
+				data.save(temporaryBank, {
 			   		success: function(object) {
 			   			alert("Alle gegevens zijn opgeslagen, bedankt.");
 			   			window.location.reload(true);
