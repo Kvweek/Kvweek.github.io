@@ -3,8 +3,11 @@
 ////////////////////////////////////
 Parse.initialize("4pAG568039x8dBBuekW2JvZhZahlImuqWpXHjums", "NlLcCGaYN7QGVzQUScXcRjj26QnVJT6O8iUU1mJH");
     
-var inschrijfDb = Parse.Object.extend("inschrijfDb");
-var data = new inschrijfDb();
+var bouwgeinDB = Parse.Object.extend("BouwgeinKinderen");
+var bouwgeinKind = new bouwgeinDB();
+var jeugdlandDB = Parse.Object.extend("JeugdlandKinderen");
+var jeugdlandKind = new jeugdlandDB();
+
 var temporaryBank = new Object();
 
 $(document).ready(function(){
@@ -12,15 +15,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	$("#submit").on('click', function(){
-		var answer1 = confirm("Wilt u nog meer kinderen inschrijven ? 
-			Zo ja, dan worden de basis gegevens gekopieërd. (e-mail, telefoon, etc)");
+	$("#submit").click(function(){
+		var answer1 = confirm("Wilt u nog meer kinderen inschrijven ? Zo ja, dan worden de basis gegevens gekopieërd. (e-mail, telefoon, etc)");
+		
 		if(answer1){
 			var answer2 = confirm("Weet u zeker dat alle gegevens kloppen ?");
-			if(antwoord) {
-				data.save(temporaryBank, {
+			
+			if(answer2) {
+				bouwgeinKind.save(temporaryBank, {
 			   		success: function(object) {
-			   			alert("Alle gegevens zijn opgeslagen, bedankt.");
+			   			alert("Alle gegevens zijn opgeslagen, U kunt nu verder gaan.");
+			   			temporaryBank.geslacht = $("input[name=sex]:checked").val();
 					},
 		   			error: function(model, error) {
 		       			alert("Error");
@@ -28,12 +33,15 @@ $(document).ready(function(){
 				})
 			};
 		}
+		
 		else {
 			var answer2 = confirm("Weet u zeker dat alle gegevens kloppen ?");
-			if(antwoord) {
-				data.save(temporaryBank, {
+			
+			if(answer2) {
+				bouwgeinKind.save(temporaryBank, {
 			   		success: function(object) {
 			   			alert("Alle gegevens zijn opgeslagen, bedankt.");
+			   			temporaryBank.geslacht = $("input[name=sex]:checked").val();
 			   			window.location.reload(true);
 					},
 		   			error: function(model, error) {
