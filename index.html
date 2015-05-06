@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 
-  <title>My Parse App</title>
+  <title>Inschrijving</title>
   <meta name="description" content="My Parse App">
   <meta name="viewport" content="width=device-width">
   <!--<link rel="stylesheet" href="css/reset.css">-->
@@ -14,32 +14,78 @@
 </head>
 
 <body>
-  <div id="main">
-    <h1>INSCHRIJFAVOND KINDERVAKANTIEWEEK</h1>
+  <datalist id="donderdag">
+    <option value="Tot 15:00">
+    <option value="Tot 19:00">
+    <option value="Speurtocht">
+    <option value="Slapen">
+  </datalist>
+  <span style="text-align: center">Vul in bij welke locatie u de KVW wilt bijwonen.</span>
+  <div id="bouwgein">
+    <h1>BOUWGEIN</h1>
 
     <div class="labels">
       <span>Inschrijfnummer</span>
       <span>Voornaam</span>
       <span>Achternaam</span>
       <span>Geslacht</span>
-      <span>test1</span>
+      <span>Geboortedatum</span>
+      <span>Leeftijd tijdens kvw</span>
+      <span>E-mail</span>
+      <span>Zwemdiploma</span>
+      <span>Medicijnen</span>
+      <span>Verblijf Donderdag</span>
+      <span>Bijzonderheden</span>
     </div>
     <div class="tbs">
       <input type="text" class="textbox">
       <input type="text" class="textbox">
+      <input type="text" class="textbox"></br>
+      Jongen: <input type="radio" value="Jongen" name="bsex"> Meisje: <input type="radio" value="Meisje" name="bsex"></br>
+      <input type="text" class="textbox"> (DD-MM-JJJJ)
+      <input type="text" class="textbox"> (na 17-08)
       <input type="text" class="textbox">
-      <input type="radio" value="Jongen" checked name="sex"><input type="radio" value="Meisje" name="sex">
+      <input type="text" class="textbox">
+      <input type="text" class="textbox">
+      <input list="donderdag">
       <input type="text" class="textbox">
     </div>
 
+  </br></br></br>
+    <div id="submitbouwgein" class="submit">Opslaan</div>
+  </div>
+  <div id="jeugdland">
+    <h1>JEUGDLAND</h1>
 
-    <div id="submit">Opslaan</div>
+    <div class="labels">
+      <span>Inschrijfnummer</span>
+      <span>Voornaam</span>
+      <span>Achternaam</span>
+      <span>Geslacht</span>
+      <span>Geboortedatum</span>
+      <span>Leeftijd tijdens kvw</span>
+      <span>E-mail</span>
+      <span>Zwemdiploma</span>
+      <span>Medicijnen</span>
+      <span>Verblijf Donderdag</span>
+      <span>Bijzonderheden</span>
+    </div>
+    <div class="tbs">
+      <input type="text" class="textbox">
+      <input type="text" class="textbox">
+      <input type="text" class="textbox"></br>
+      Jongen: <input type="radio" value="Jongen" name="jsex"> Meisje: <input type="radio" value="Meisje" name="jsex"></br>
+      <input type="text" class="textbox"> (DD-MM-JJJJ)
+      <input type="text" class="textbox"> (na 17-08)
+      <input type="text" class="textbox">
+      <input type="text" class="textbox">
+      <input type="text" class="textbox">
+      <input list="donderdag">
+      <input type="text" class="textbox">
+    </div>
 
-      <p>Read the documentation and start building your JavaScript app:</p>
-    <ul>
-      <li><a href="https://www.parse.com/docs/js_guide">Parse JavaScript Guide</a></li>
-      <li><a href="https://www.parse.com/docs/js">Parse JavaScript API Documentation</a></li>
-    </ul>
+  </br></br></br>
+    <div id="submitjeugdland" class="submit">Opslaan</div>
   </div>
 </body>
 
