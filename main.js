@@ -44,7 +44,7 @@ $(document).ready(function(){
 });
 
 function opslagBouwgein() {
-	temporaryBank.kleuter = $("#bkleuter").checked();
+	temporaryBank.kleuter = $("#bkleuter:checked").val();
 	temporaryBank.inschrijfnr = $("#binschrijfnr").val();
    	temporaryBank.voornaam = $("#bvoornaam").val();
     temporaryBank.achternaam = $("#bachternaam").val();
