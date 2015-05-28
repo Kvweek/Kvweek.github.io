@@ -11,7 +11,7 @@ body {
     margin: 20px 0 0 50px;
     padding: 20px;
     border-radius: 20px;
-    height: 500px;
+    height: 650px;
 }
 
 #bouwgein h1 {
@@ -32,7 +32,7 @@ body {
     margin: 20px 0 0 50px;
     padding: 20px;
     border-radius: 20px;
-    height: 500px;
+    height: 650px;
 }
 
 #jeugdland h1 {
@@ -74,25 +74,22 @@ body {
     user-select: none;
 }
 
-div.tbs {
-    position: relative;
-    display: inline-block;
-    width: 250px;
-    margin-left: -10px;
+div.form {
+    width: 450px;
+    height: 450px;
 }
 
-div.labels {
-    position: relative;
+div.form span {
     display: inline-block;
-    text-align: right;
-    line-height: 26px;
-    font-size: 16px;
-    padding-right: 20px;
+    line-height: 200%;
     width: 150px;
+}
+
+div.form input { 
 }
 
 .textbox {
-    width: 150px;
+    width: 180px;
     height: 20px;
     border-radius: 5px;
     border-width: 1px;
@@ -102,6 +99,7 @@ div.labels {
 .textbox:focus {
     background: rgba(255, 255, 255, 1);
 }
+
 
 span {
     display: block;

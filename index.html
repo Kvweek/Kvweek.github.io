@@ -17,75 +17,61 @@
   <datalist id="donderdag">
     <option value="Tot 15:00">
     <option value="Tot 19:00">
-    <option value="Speurtocht">
-    <option value="Slapen">
+    <option value="Speurtocht (vanaf 8 jaar)">
+    <option value="Slapen (vanaf 8 jaar)">
   </datalist>
   <span style="text-align: center">Vul in bij welke locatie u de KVW wilt bijwonen.</span>
   <div id="bouwgein">
     <h1>BOUWGEIN</h1>
 
-    <div class="labels">
-      <span>Inschrijfnummer</span>
-      <span>Voornaam</span>
-      <span>Achternaam</span>
-      <span>Geslacht</span>
-      <span>Geboortedatum</span>
-      <span>Leeftijd tijdens kvw</span>
-      <span>E-mail</span>
-      <span>Zwemdiploma</span>
-      <span>Medicijnen</span>
-      <span>Verblijf Donderdag</span>
-      <span>Bijzonderheden</span>
-    </div>
-    <div class="tbs">
-      <input type="text" class="textbox">
-      <input type="text" class="textbox">
-      <input type="text" class="textbox"></br>
+  <div class="form" >
+      <span style="width:55px">Kleuter</span> <input type="checkbox" id="bkleuter" value="bkleuter"></br>
+      <span>Inschrijfnummer</span> <input type="text" class="textbox" id="binschrijfnr"></br>
+      <span>Voornaam</span> <input type="text" class="textbox" id="bvoornaam"></br>
+      <span>Achternaam</span> <input type="text" class="textbox" id="bachternaam"></br>
       Jongen: <input type="radio" value="Jongen" name="bsex"> Meisje: <input type="radio" value="Meisje" name="bsex"></br>
-      <input type="text" class="textbox"> (DD-MM-JJJJ)
-      <input type="text" class="textbox"> (na 17-08)
-      <input type="text" class="textbox">
-      <input type="text" class="textbox">
-      <input type="text" class="textbox">
-      <input list="donderdag">
-      <input type="text" class="textbox">
-    </div>
+      <span>Geboortedatum</span> <input type="date" class="textbox" id="bdatum"> (DD-MM-JJJJ)</br>
+      <span>E-mail</span> <input type="text" class="textbox" id="bemail"></br>
+      <span>Zwemdiploma</span> <input type="text" class="textbox" id="bzwemdiploma"></br>
+      <span>Medicijnen</span> <input type="text" class="textbox" id="bmedicijnen"></br>
+      <span id="bdddag">Verblijf Donderdag</span> <input list="donderdag" id="bddd" style="display: inline-block"></br>
+      <span>telefoonnummer</span> <input type="text" class="textbox" id="btelefoon"></br>
+      <span>telefoonnummer2</span> <input type="text" class="textbox" id="btelefoon2"></br>
+      <span>huisarts</span> <input type="text" class="textbox" id="bhuisarts"></br>
+      <span>Bijzonderheden</span></br>
+      <textarea rows="5" cols="35" id="bbijzonder"></textarea></br>
+
+  </div>
 
   </br></br></br>
     <div id="submitbouwgein" class="submit">Opslaan</div>
+    <div id="empty" class="submit">Velden leegmaken</div>
   </div>
-  <div id="jeugdland">
+  <div id="jeugdland"> 
     <h1>JEUGDLAND</h1> 
 
-    <div class="labels">
-      <span>Inschrijfnummer</span>
-      <span>Voornaam</span>
-      <span>Achternaam</span>
-      <span>Geslacht</span>
-      <span>Geboortedatum</span>
-      <span>Leeftijd tijdens kvw</span>
-      <span>E-mail</span>
-      <span>Zwemdiploma</span>
-      <span>Medicijnen</span>
-      <span>Verblijf Donderdag</span>
-      <span>Bijzonderheden</span>
-    </div>
-    <div class="tbs">
-      <input type="text" class="textbox">
-      <input type="text" class="textbox">
-      <input type="text" class="textbox"></br>
-      Jongen: <input type="radio" value="Jongen" name="jsex"> Meisje: <input type="radio" value="Meisje" name="jsex"></br>
-      <input type="text" class="textbox"> (DD-MM-JJJJ)
-      <input type="text" class="textbox"> (na 17-08)
-      <input type="text" class="textbox">
-      <input type="text" class="textbox">
-      <input type="text" class="textbox">
-      <input list="donderdag">
-      <input type="text" class="textbox">
-    </div>
+  <div class="form" >
+      <span style="width:55px">Kleuter</span> <input type="checkbox" id="jkleuter" value="jkleuter"></br>
+      <span>Inschrijfnummer</span> <input type="text" class="textbox"></br>
+      <span>Voornaam</span> <input type="text" class="textbox"></br>
+      <span>Achternaam</span> <input type="text" class="textbox"></br>
+      Jongen: <input type="radio" value="Jongen" name="bsex"> Meisje: <input type="radio" value="Meisje" name="bsex"></br>
+      <span>Geboortedatum</span> <input type="date" class="textbox"> (DD-MM-JJJJ)</br>
+      <span>E-mail</span> <input type="text" class="textbox"></br>
+      <span>Zwemdiploma</span> <input type="text" class="textbox"></br>
+      <span>Medicijnen</span> <input type="text" class="textbox"></br>
+      <span id="jdddag">Verblijf Donderdag</span> <input list="donderdag" id="jddd" style="display: inline-block"></br>
+      <span>telefoonnummer</span> <input type="text" class="textbox"></br>
+      <span>telefoonnummer2</span> <input type="text" class="textbox"></br>
+      <span>huisarts</span> <input type="text" class="textbox"></br>
+      <span>Bijzonderheden</span></br>
+      <textarea rows="5" cols="35"></textarea></br>
+
+  </div>
 
   </br></br></br>
     <div id="submitjeugdland" class="submit">Opslaan</div>
+    <div id="empty" class="submit">Velden leegmaken</div>
   </div>
 </body>
 
