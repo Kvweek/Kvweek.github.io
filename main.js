@@ -59,6 +59,22 @@ function opslagBouwgein() {
  	temporaryBank.bijzonderheden = $("#bbijzonder").val();
 }
 
+function opslagJeugdland() {
+	temporaryBank.kleuter = $("#jkleuter:checked").val();
+	temporaryBank.inschrijfnr = $("#jinschrijfnr").val();
+   	temporaryBank.voornaam = $("#jvoornaam").val();
+    temporaryBank.achternaam = $("#jachternaam").val();
+ 	temporaryBank.geslacht = $("input[name=jsex]:checked").val();
+ 	temporaryBank.geboortedatum = $("#jdatum").val();
+ 	temporaryBank.email = $("#jemail").val();
+ 	temporaryBank.zwemdiploma = $("#jzwemdiploma").val();
+ 	temporaryBank.medicijnen = $("#jmedicijnen").val();
+ 	temporaryBank.telefoon = $("#jtelefoon").val();
+ 	temporaryBank.telefoon2 = $("#jtelefoon2").val();
+ 	temporaryBank.huisarts = $("#jhuisarts").val();
+ 	temporaryBank.bijzonderheden = $("#jbijzonder").val();
+}
+
 
 $(document).ready(function(){
 	$("#submitbouwgein").click(function(){
@@ -102,15 +118,11 @@ $(document).ready(function(){
 		if($('#jkleuter').is(':checked')){
 			var answer1 = confirm("Weet u zeker dat alle gegevens kloppen ?");
 			if(answer1) {
+				opslagJeugdland();
+				temporaryBank.donderdag = $("jddd").val();
 				jeugdlandKleuters.save(temporaryBank, {
 			   		success: function(object) {
 			   			alert("Alle gegevens zijn opgeslagen.");
-			   			temporaryBank.kleuter = $("#jkleuter").val();
-			   			temporaryBank.inschrijfnr = $("#jinschrijfnr").val();
-			   			temporaryBank.voornaam = $("#jvoornaam").val();
-			   			temporaryBank.achternaam = $("#jachternaam").val();
-			   			temporaryBank.geslacht = $("input[name=jsex]:checked").val();
-			   			
 						},
 		   			error: function(model, error) {
 		       			alert("Error");
@@ -121,15 +133,10 @@ $(document).ready(function(){
 		else {
 			var answer1 = confirm("Weet u zeker dat alle gegevens kloppen ?");
 			if(answer1) {
+				opslagJeugdland();
 				jeugdlandKleuters.save(temporaryBank, {
 			   		success: function(object) {
 			   			alert("Alle gegevens zijn opgeslagen.");
-			   			temporaryBank.kleuter = $("#jkleuter").val();
-			   			temporaryBank.inschrijfnr = $("#jinschrijfnr").val();
-			   			temporaryBank.voornaam = $("#jvoornaam").val();
-			   			temporaryBank.achternaam = $("#jachternaam").val();
-			   			temporaryBank.geslacht = $("input[name=jsex]:checked").val();
-			   			
 						},
 		   			error: function(model, error) {
 		       			alert("Error");
